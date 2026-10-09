@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – HarshOS Keyboard</title>
+<meta name="description" content="Privacy Policy for HarshOS Keyboard (com.harsh.keyboard): what the app reads, stores and sends, and the choices you have.">
+<style>
+  :root {
+    --ink: #14202b;
+    --muted: #51606d;
+    --paper: #f6f8fa;
+    --panel: #ffffff;
+    --line: #d5dde3;
+    --accent: #0b6e6e;
+    --accent-soft: #e2f1f0;
+    --warn-bg: #fff4dd;
+    --warn-line: #e2bd6b;
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e7edf2;
+      --muted: #a2b0bc;
+      --paper: #0f161c;
+      --panel: #16202a;
+      --line: #2a3947;
+      --accent: #5cc7c0;
+      --accent-soft: #14312f;
+      --warn-bg: #33290f;
+      --warn-line: #7a6221;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 1.75rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.5rem 0 .6rem; padding-top: .25rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .3rem; }
+  p { margin: .6rem 0; max-width: 68ch; }
+  ul { margin: .5rem 0 .8rem; padding-left: 1.25rem; max-width: 68ch; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .summary {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.15rem;
+    border-radius: 6px;
+  }
+  .summary p, .summary ul { margin-top: .35rem; }
+  .notice {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-line);
+    padding: .9rem 1.1rem;
+    border-radius: 6px;
+    margin: 1.25rem 0;
+  }
+  nav.toc {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: .9rem 1.15rem;
+    margin: 0 0 1rem;
+  }
+  nav.toc ol { margin: .4rem 0 0; padding-left: 1.3rem; columns: 2 14rem; column-gap: 2rem; }
+  nav.toc li { margin: .2rem 0; break-inside: avoid; }
+  .table-scroll { overflow-x: auto; margin: .8rem 0 1.2rem; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+  table { border-collapse: collapse; width: 100%; min-width: 36rem; font-size: .93rem; }
+  th, td { text-align: left; vertical-align: top; padding: .65rem .8rem; border-bottom: 1px solid var(--line); }
+  th { background: var(--accent-soft); font-weight: 650; }
+  tr:last-child td { border-bottom: 0; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; background: var(--accent-soft); padding: .1em .35em; border-radius: 4px; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+  @media print {
+    body { background: #fff; color: #000; }
+    .summary, .notice, nav.toc { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">HarshOS Keyboard (package <code>com.harsh.keyboard</code>) · Developer: Harsh OS Technologies</p>
+  <p class="meta">Effective and last updated: October 9, 2026</p>
+</header>
+
+<div class="summary" id="summary">
+  <strong>The short version</strong>
+  <ul>
+    <li>We have no user accounts, and we do not run a server that stores what you type.</li>
+    <li>Normal typing stays on your phone. We do not record, log or upload your keystrokes.</li>
+    <li>Some features send data to other companies, but only when you use them: Google Gemini (Miki chat, voice commands, translate button), your phone's Google speech service (voice), Giphy (GIFs) and worldtimeapi.org (a time check for VIP). The details are in <a href="#sent">section 3</a>.</li>
+    <li>Everything the app stores is on your device and is removed when you clear app data or uninstall.</li>
+    <li>We do not sell your data and we do not use advertising or analytics SDKs.</li>
+  </ul>
+</div>
+
+<nav class="toc" aria-label="Contents">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#who">Who we are</a></li>
+    <li><a href="#keyboard">What a keyboard can see</a></li>
+    <li><a href="#sent">Data sent off your device</a></li>
+    <li><a href="#stored">Data stored on your device</a></li>
+    <li><a href="#permissions">Permissions and why we ask</a></li>
+    <li><a href="#vip">VIP, device ID and payments</a></li>
+    <li><a href="#encryption">Encryption tool</a></li>
+    <li><a href="#notdo">What we do not do</a></li>
+    <li><a href="#retention">Retention and deletion</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#choices">Your choices and rights</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</nav>
+
+<h2 id="who">1. Who we are</h2>
+<p>HarshOS Keyboard is an Android keyboard with an optional voice assistant called Miki. It is developed by Harsh OS Technologies. In this policy, "we" and "the app" mean HarshOS Keyboard and its developer. You can reach us at <a href="mailto:harshosvip@gmail.com">harshosvip@gmail.com</a>.</p>
+<p>This policy applies to the app and its screens, services and keyboard. It does not cover the websites or services of the companies named in section 3.</p>
+
+<h2 id="keyboard">2. What a keyboard can see</h2>
+<p>Any Android keyboard can technically see the text you type in other apps. HarshOS Keyboard uses that text only to type it for you. It does not save your typing, build a log of it or upload it, except for the features in section 3 that you start yourself.</p>
+<div class="notice">
+  <strong>Please avoid sensitive fields.</strong> The Miki translate button sends the text before your cursor (up to 1000 characters) to Google Gemini. The keyboard does not currently treat password or payment fields differently. Do not use the translate button or Miki features in password, banking, card or other sensitive fields.
+</div>
+
+<h2 id="sent">3. Data sent off your device</h2>
+<p>The app connects to the internet only for the features below. We do not receive any of this data ourselves: it goes directly from your phone to the service named.</p>
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Feature</th><th>What is sent</th><th>Sent to</th><th>When</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Miki chat</td>
+      <td>The question you type or say</td>
+      <td>Google Gemini API</td>
+      <td>Only when you ask Miki something</td>
+    </tr>
+    <tr>
+      <td>Voice commands</td>
+      <td>The text of a command the app cannot match on your phone, for example "make the theme rose and turn volume up"</td>
+      <td>Google Gemini API</td>
+      <td>Only after you speak a command to Miki</td>
+    </tr>
+    <tr>
+      <td>Miki translate button</td>
+      <td>The text before your cursor, up to 1000 characters</td>
+      <td>Google Gemini API</td>
+      <td>Only when you tap the button</td>
+    </tr>
+    <tr>
+      <td>Voice typing and voice commands</td>
+      <td>Your voice, as audio</td>
+      <td>The speech recognition service on your phone, usually Google</td>
+      <td>Only while the microphone is listening</td>
+    </tr>
+    <tr>
+      <td>GIF panel</td>
+      <td>Your GIF search words, or a request for trending GIFs</td>
+      <td>Giphy</td>
+      <td>Only when you open or search the GIF panel</td>
+    </tr>
+    <tr>
+      <td>VIP expiry check</td>
+      <td>A plain request for the current time. No personal data is included.</td>
+      <td>worldtimeapi.org</td>
+      <td>When the app opens</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>All requests use HTTPS. Like any internet request, these services can see your IP address and basic technical details such as your device type.</p>
+<h3>How these companies handle the data</h3>
+<ul>
+  <li><strong>Google Gemini and Google speech:</strong> processed under Google's terms. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API terms</a>. Please do not send content you want to keep private.</li>
+  <li><strong>Giphy:</strong> see the privacy policy on Giphy's website. We request family-friendly (rated G) GIFs only.</li>
+  <li><strong>worldtimeapi.org:</strong> a public time service. We send nothing about you beyond the request itself.</li>
+</ul>
+<p>Some Miki features use a Gemini API key supplied by the developer. Miki Live for regular users asks you to enter your own Gemini API key, and requests then use your key under your own agreement with Google.</p>
+<p>The app also reads only what is listed here. It does not send contacts, messages, photos, your location, your notifications, or what is on your screen.</p>
+
+<h2 id="stored">4. Data stored on your device</h2>
+<p>The following is kept in the app's private storage on your phone. It is not uploaded to us.</p>
+<ul>
+  <li>Your settings: theme, sound, vibration, keyboard height, shortcuts and layout choices.</li>
+  <li>VIP status, the expiry timers and the name you enter when you activate VIP.</li>
+  <li>A random ID that the app creates for itself. It is used for the VIP code.</li>
+  <li>Your own Gemini API key, if you enter one. It is kept in the app's private storage and is not shared with us.</li>
+  <li>A small cache of recent Miki commands, for example "dark theme" and the action it maps to, so repeated commands run faster. The cache is capped and is cleared automatically when it grows too large.</li>
+  <li>Simple Miki counters, such as how often you changed a theme, used to vary Miki's replies.</li>
+</ul>
+<p><strong>Clipboard history.</strong> While the keyboard is active, it remembers the last 10 items you copy so that you can paste them from its clipboard panel. This list is held in memory only. It is never uploaded, and it is lost when the keyboard service restarts or when you clear it from the panel. Because this happens for anything you copy, avoid copying passwords while this keyboard is active.</p>
+
+<h2 id="permissions">5. Permissions and why we ask</h2>
+<p>Optional permissions are requested only when you use the related feature, and you can turn any of them off in Android settings.</p>
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why the app needs it</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Microphone</td><td>Voice typing and Miki voice commands.</td></tr>
+    <tr><td>Camera</td><td>Camera and flashlight commands.</td></tr>
+    <tr><td>Internet</td><td>The features in section 3.</td></tr>
+    <tr><td>Display over other apps</td><td>Showing the Miki floating assistant (VIP, optional).</td></tr>
+    <tr><td>Modify system settings</td><td>Brightness up and down commands.</td></tr>
+    <tr><td>Notification access</td><td>Only to control media playback: play, pause, next and previous. The app does not read, store or send the content of your notifications.</td></tr>
+    <tr><td>Accessibility service</td><td>Only to carry out the screenshot action when you ask for it. The service does not watch your screen, read content or record what you do.</td></tr>
+    <tr><td>Vibration</td><td>Haptic feedback when you type.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="vip">6. VIP, device ID and payments</h2>
+<ul>
+  <li><strong>Device ID.</strong> The app reads your Android ID on the device only, to check device-specific access such as VIP and owner features. It is not uploaded.</li>
+  <li><strong>VIP codes.</strong> A VIP code is checked inside the app against your device's ID. VIP lasts 30 days.</li>
+  <li><strong>Payments.</strong> The app does not collect payment details. VIP is paid for by the user through UPI outside the app. If you email proof of payment, you send it yourself and we use it only to give you your VIP code.</li>
+</ul>
+
+<h2 id="encryption">7. Encryption tool</h2>
+<p>The Encrypt and Decrypt tool uses AES-256-GCM. Keys are derived with PBKDF2-HMAC-SHA256 (10,000 iterations), and each message gets its own random salt and IV. Encryption happens on your device and you keep the key. If you lose the key, we cannot recover your text.</p>
+
+<h2 id="notdo">8. What we do not do</h2>
+<ul>
+  <li>We do not sell or rent your data.</li>
+  <li>We do not run a server that collects your typing.</li>
+  <li>We do not use advertising SDKs or analytics and tracking SDKs.</li>
+  <li>We do not access your location, contacts or SMS messages.</li>
+  <li>We do not read your notifications or your screen content.</li>
+</ul>
+<p>If you installed the app from Google Play, Google may give us anonymous install and crash statistics through the Play Console. Those are collected by Google, not by the app.</p>
+
+<h2 id="retention">9. Retention and deletion</h2>
+<p>We do not keep your data on our own servers, so there is nothing for us to delete there. Data stored by the app lives on your phone and is removed when you use <em>Clear data</em> in Android's app settings or uninstall the app. Data you sent to Google, Giphy or worldtimeapi.org is kept according to their own policies, and you should contact them about it.</p>
+
+<h2 id="security">10. Security</h2>
+<p>Requests to other services use HTTPS. App data is stored in Android's private app storage, which other apps cannot normally read, but it is not additionally encrypted. No system is completely secure, so we cannot promise absolute security.</p>
+
+<h2 id="choices">11. Your choices and rights</h2>
+<ul>
+  <li>Use the keyboard without any Miki or online feature. Typing works without them.</li>
+  <li>Turn Miki and the floating assistant off in the app's settings.</li>
+  <li>Revoke any permission in Android settings.</li>
+  <li>Delete everything the app stores with Clear data or by uninstalling.</li>
+  <li>Ask us a privacy question, or make an access or deletion request, at <a href="mailto:harshosvip@gmail.com">harshosvip@gmail.com</a>. Because we hold no account data, we will explain what the app stores and point you to the third-party services in section 3 for anything held there.</li>
+</ul>
+
+<h2 id="children">12. Children</h2>
+<p>The app is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has used the Miki features and you want the data removed, contact us and the relevant service.</p>
+
+<h2 id="changes">13. Changes to this policy</h2>
+<p>If the app starts handling data differently, we will update this page and the policy shown inside the app, and change the date at the top. Please check it from time to time.</p>
+
+<h2 id="contact">14. Contact</h2>
+<p>Harsh OS Technologies<br>Email: <a href="mailto:harshosvip@gmail.com">harshosvip@gmail.com</a></p>
+
+<footer>
+  <p>© 2026 Harsh OS Technologies. This policy describes the behavior of HarshOS Keyboard as of October 9, 2026.</p>
+</footer>
+
+</div>
+</body>
+</html>
